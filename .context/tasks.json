@@ -1,0 +1,82 @@
+{
+  "tasks": [
+    {
+      "taskId": "task-001",
+      "title": "Example: Implement user authentication UI",
+      "description": "Create login and signup forms with email/password authentication",
+      "status": "pending",
+      "priority": "high",
+      "assignedTo": "web-dev",
+      "dependencies": [],
+      "acceptanceCriteria": [
+        "Login form with email and password fields",
+        "Signup form with email, password, and confirm password fields",
+        "Form validation for email format and password strength",
+        "Error messages displayed for failed authentication",
+        "Loading states during authentication",
+        "Responsive design on mobile and desktop"
+      ],
+      "estimatedHours": 4,
+      "actualHours": 0,
+      "failureCount": 0,
+      "lastFailure": null,
+      "blockedBy": [],
+      "tags": ["feature", "frontend", "authentication"]
+    },
+    {
+      "taskId": "task-002",
+      "title": "Example: Set up Supabase authentication",
+      "description": "Configure Supabase Auth for email/password authentication",
+      "status": "pending",
+      "priority": "high",
+      "assignedTo": "server-dev",
+      "dependencies": [],
+      "acceptanceCriteria": [
+        "Supabase Auth configured for email provider",
+        "User profile table created with proper RLS policies",
+        "Email verification enabled",
+        "Password reset flow configured",
+        "JWT token handling implemented"
+      ],
+      "estimatedHours": 3,
+      "actualHours": 0,
+      "failureCount": 0,
+      "lastFailure": null,
+      "blockedBy": [],
+      "tags": ["feature", "backend", "authentication"]
+    },
+    {
+      "taskId": "task-003",
+      "title": "Example: Integrate frontend with backend auth",
+      "description": "Connect frontend auth UI with Supabase Auth backend",
+      "status": "pending",
+      "priority": "high",
+      "assignedTo": "both",
+      "dependencies": ["task-001", "task-002"],
+      "acceptanceCriteria": [
+        "Login form calls Supabase Auth API",
+        "Signup form creates user in Supabase",
+        "Auth state managed in Zustand store",
+        "Protected routes redirect unauthenticated users",
+        "Logout functionality working",
+        "Auth state persists across page refreshes"
+      ],
+      "estimatedHours": 5,
+      "actualHours": 0,
+      "failureCount": 0,
+      "lastFailure": null,
+      "blockedBy": [],
+      "tags": ["feature", "integration", "authentication"]
+    }
+  ],
+  "metadata": {
+    "totalTasks": 3,
+    "completedTasks": 0,
+    "pendingTasks": 3,
+    "inProgressTasks": 0,
+    "failedTasks": 0,
+    "lastUpdated": "2024-01-01T00:00:00Z",
+    "estimatedTotalHours": 12,
+    "actualTotalHours": 0
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "project": {
+    "name": "Project Name",
+    "description": "Project description",
+    "startDate": null,
+    "lastUpdate": null
+  },
+  "summary": {
+    "totalTasks": 0,
+    "completedTasks": 0,
+    "pendingTasks": 0,
+    "inProgressTasks": 0,
+    "failedTasks": 0,
+    "completionPercentage": 0
+  },
+  "qualityMetrics": {
+    "testPassRate": 0,
+    "bugEscapeRate": 0,
+    "averageFixTime": 0,
+    "reworkRate": 0,
+    "failurePatterns": []
+  },
+  "timeline": {
+    "estimatedTotalHours": 0,
+    "actualTotalHours": 0,
+    "averageTaskDuration": 0,
+    "estimatedCompletion": null,
+    "actualCompletion": null
+  },
+  "activeTask": {
+    "taskId": null,
+    "agent": null,
+    "phase": null,
+    "startedAt": null
+  },
+  "history": [
+    {
+      "timestamp": "2024-01-01T00:00:00Z",
+      "event": "Project initialized",
+      "details": "Context folder created and templates set up"
+    }
+  ]
+}
